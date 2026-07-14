@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Passaporte de Marca Pessoal · Contadores de Stories</title>
+  <title>StoryCraft · Contadores de Stories</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -357,7 +357,7 @@
       </div>
 
       <p class="headline">
-        Preencha os campos abaixo com os <strong>4 últimos números</strong> do seu celular para ter acesso ao seu Passaporte de Marca Pessoal.
+        Preencha os campos abaixo com os <strong>4 últimos números</strong> do seu celular para ter acesso ao seu Storycraft personalizado.
       </p>
 
       <div class="digits" id="digits-container" role="group" aria-label="Código de acesso">
@@ -367,8 +367,8 @@
         <input class="digit-input" id="d3" type="tel" inputmode="numeric" maxlength="1" autocomplete="off" placeholder="·" aria-label="Quarto dígito" />
       </div>
 
-      <button class="btn" id="confirm-btn" disabled aria-label="Acessar meu Passaporte de Marca Pessoal">
-        Acessar meu Passaporte
+      <button class="btn" id="confirm-btn" disabled aria-label="Acessar meu Storycraft">
+        Acessar meu Storycraft
       </button>
 
       <p class="msg" id="msg" aria-live="polite" role="status"></p>
@@ -384,16 +384,14 @@
 
   <script>
     const links = {
-      '3363': 'https://docs.google.com/document/d/1jhYmmNGTy22WOKXp8yOtPnedZH9FYvobuaQYhlkf4H0/edit?usp=sharing',
-      '2446': 'https://docs.google.com/document/d/1ifE-_9y8KHDI8SqVfk6lx6y87PoaPwJXsiSsFVgxBm0/edit?usp=sharing',
-      '6030': 'https://docs.google.com/document/d/1ejXXXqgwxavYTcsFZbVw-4DwtaLytfZWyHcNMCKqk-8/edit?usp=sharing',
-      '2185': 'https://docs.google.com/document/d/1G-EXM3cFc6VTkB3p8Kwmx5L7Dnzu-3qgX_HXmFAieKE/edit?usp=sharing',
-      '2201': 'https://docs.google.com/document/d/1XXdzJ_F-xmhsXcgKqKngHiHdI9ouvo6TLwxZVD65y6c/edit?usp=sharing',
-      '9739': 'https://docs.google.com/document/d/14dwgSgLUfwfp_wVwf7KmbJOrPBoHsuoY5_wqRdejE34/edit?usp=sharing',
-      '6037': 'https://docs.google.com/document/d/1p-PmUrnujV1y5D49FS5XI2emKNu9lPyxP57bx_npC4s/edit?usp=sharing',
-      '8929': 'https://docs.google.com/document/d/1zlKcmmGF0nRHan9yglcySdKTtpvKb6kNLmEDQBlxTAQ/edit?usp=sharing',
-      '5255': 'https://docs.google.com/document/d/1nVAM26nacq_iE2ZF2AnRtkye18A33u9aAHO0M7ZKLcI/edit?usp=sharing',
-      '7766': 'https://docs.google.com/document/d/1yYo0LAhvTpkxNKubSfDPSAIwKDDaHiS-Wnqbo4mkRUs/edit?usp=sharing'
+      '5255': 'https://chatgpt.com/g/g-6a56893d9e6c8191a16743e835a3cf7a-storycraft-pandora',
+      '8929': 'https://chatgpt.com/g/g-6a56881aa17c81918fa713f0a942ee18-storycraft-mariana-werlich',
+      '6037': 'https://chatgpt.com/g/g-6a56862ab670819195c34a87bdbaa1c4-storycraft-kamila-mota',
+      '2201': 'https://chatgpt.com/g/g-6a568520b4588191b7f70727fc6ac77a-storycraft-hyuri-souza',
+      '2185': 'https://chatgpt.com/g/g-6a5683c7db0c8191b297a677a52f9a75-storycraft-helena-fronza',
+      '6030': 'https://chatgpt.com/g/g-6a568093d74c81919c5ebf5fc3a42c04-storycraft-giulia-goulart',
+      '2446': 'https://chatgpt.com/g/g-6a567e7aea08819194065500e08ba7d0-storycraft-danielly-aguiar',
+      '3363': 'https://chatgpt.com/g/g-6a56744001308191a4c2ae08923a877e-storycraft-amanda-costa'
     };
 
     const inputs = Array.from(document.querySelectorAll('.digit-input'));
@@ -485,7 +483,7 @@
         btn.disabled = true;
         setTimeout(() => {
           window.open(links[code], '_blank');
-          setMsg('Passaporte aberto em nova aba.', 'success');
+          setMsg('Storycraft aberto em nova aba.', 'success');
           btn.disabled = false;
         }, 500);
       } else {
